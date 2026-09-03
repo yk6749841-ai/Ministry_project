@@ -1,0 +1,66 @@
+:root {
+  /* Modern light-brown + light-blue palette */
+  --bg: #f6f1e8;
+  --surface: #ffffff;
+  --surface-2: #fbf7f0;
+  --text: #2b2620;
+  --text-muted: #7c7264;
+  --border: #e9dfd0;
+  --border-strong: #d9ccb6;
+
+  --accent: #2f6fb3;
+  --accent-hover: #255c98;
+  --accent-soft: #e7f0f9;
+
+  --brown: #9c6b45;
+  --brown-soft: #f1e6d5;
+
+  --ok-bg: #e3f3e9;
+  --ok-text: #1f7a45;
+  --error-bg: #fbe9e7;
+  --error-text: #b23b2e;
+  --warn-bg: #fdf1dd;
+  --warn-text: #8a5a1e;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgba(60, 42, 24, 0.05), 0 10px 30px rgba(60, 42, 24, 0.07);
+
+  font-family: 'Segoe UI', system-ui, Arial, 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\" | ForEach-Object { \"$\\($_.ProcessId\\): $\\($_.CommandLine\\)\" }; \"---done---\")",
+      "Bash(timeout 12 npm start)",
+      "PowerShell($p = Get-NetTCPConnection -State Listen -LocalPort 4100 -ErrorAction SilentlyContinue; if \\($p\\) { Stop-Process -Id $p.OwningProcess -Force; \"killed $\\($p.OwningProcess\\)\" } else { \"4100 clear\" })",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\" | ForEach-Object { \"$\\($_.ProcessId\\): $\\($_.CommandLine\\)\" }; \"---\"; Get-NetTCPConnection -State Listen -LocalPort 4000,5173,5174 -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess)"
+    ]
+  }
+}
